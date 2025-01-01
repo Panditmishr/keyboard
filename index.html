@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body style="margin: 0px; height: 100%; background-color: rgb(14, 14, 14);">
+        <img style="display: block;-webkit-user-select: none;margin: auto;cursor: zoom-in;background-color: hsl(0, 0%, 90%);" 
+        src="https://raw.githubusercontent.com/geeksterin/WebCurriculum/master/Advance%20Js/Day-03/img-1/dom_min_project_keycode_day_3.2.gif" 
+        width="806" height="505">
+        <script>
+            const img = document.querySelector('img');
+            img.addEventListener('click', () => {
+                if(img.style.cursor == "zoom-in"){
+               img.style.cursor="zoom-out";
+               img.style.height="100%";
+               img.style.width="100%";
+                } else{
+                    img.style.cursor="zoom-in";
+                    img.style.height="505px";
+                    img.style.width="806px";
+                }
+            });
+    
+        </script>
+</body>
+</html>
